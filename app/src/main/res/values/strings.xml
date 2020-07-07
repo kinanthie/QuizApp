@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="qs">question</string>
+    <string name="btn1">choice1</string>
+    <string name="btn2">choice2</string>
+    <string name="btn3">choice3</string>
+    <string name="ts">textScore</string>
+</resources>
