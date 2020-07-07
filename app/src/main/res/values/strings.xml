@@ -5,4 +5,6 @@
     <string name="btn2">choice2</string>
     <string name="btn3">choice3</string>
     <string name="ts">textScore</string>
+    <string name="th">textHighScore</string>
+    <string name="btn4">Coba Lagi</string>
 </resources>

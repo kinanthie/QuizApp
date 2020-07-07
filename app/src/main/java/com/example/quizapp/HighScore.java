@@ -17,7 +17,6 @@ public class HighScore extends AppCompatActivity {
 
         TextView txtScore = (TextView) findViewById(R.id.textScore);
         TextView txtHighScore = (TextView) findViewById(R.id.textHighScore);
-
         Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
         txtScore.setText("Your score: " + score);
@@ -25,7 +24,7 @@ public class HighScore extends AppCompatActivity {
         SharedPreferences mypref = getPreferences(MODE_PRIVATE);
         int highscore = mypref.getInt("highscore", 0);
         if (highscore>= score)
-            txtHighScore.setText("New High score: " + highscore);
+            txtHighScore.setText("High score: " + highscore);
         else
         {
             txtHighScore.setText("New highscore: " + score);

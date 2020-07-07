@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             mQuestionNumber++;
         }
         else {
-            Toast.makeText(MainActivity.this, "Ini pertanyaan terakhir!", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Ini pertanyaan terakhir!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, HighScore.class);
             intent.putExtra("score", mScore);
             startActivity(intent);
@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (answer.getText() == mAnswer) {
             mScore = mScore + 1;
-            Toast.makeText(MainActivity.this, "Benar!", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Benar!", Toast.LENGTH_SHORT).show();
         }else
-            Toast.makeText(MainActivity.this, "Salah!", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Salah!", Toast.LENGTH_SHORT).show();
 
         UpdateScore(mScore);
         UpdateQuestion();
